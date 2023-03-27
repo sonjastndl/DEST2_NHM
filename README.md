@@ -8,9 +8,20 @@ The Following Analyses were performed:
 Correlation of average frequencies for both methods were investigated for correlation. 
 
 ### Latitudinal Clines Across Continents 
-For inverions *In.3R.Payne*, *In.2L.t*, *In.2R.Ns*, *In.3R.C*, *In.3R.K*, *In.3R.Mo* and  *In.3L.P* several analysis of relationship between latitude and inversion frequencies were performed. 
+For inverions *In(3R)Payne*, *In(2L)t*, *In(2R)Ns*, *In(3R)C*, *In(3R)K*, *In(3R)Mo* and  *In(3L)P* several analysis of relationship between latitude and inversion frequencies were performed. 
 
 ### Consistency Across Years
 Investigations were performed on North American sampels and European samples, to get insight into consistency of allele frequencies across years.  
 
 ## Pipeline Steps
+
+Individual scripts to perform these analyses can be found in the scripts directory, the whole pipeline is documentated in the [main.sh](shell/main.sh) file.
+
+1) Convert VCF to SYNC
+2) Get count at inversion specific marker SNPs
+3) Calculate average frequencies for marker SNPs
+4) Plot marker frequencies for each Inversion occuring in the data set
+5) Plot Correlation of Inversion Markers of PoolSNP & SNAPE
+
+### Additional scrips that can be used to extend analysis based on coverage
+
