@@ -4,7 +4,7 @@ The included scripts were applied to the *PoolSNP* and *SNAPE* VCF files of the 
 Average fequencies of these inversion specific marker SNPs were determined for each SNP calling method.
 The Following Analyses were performed.
 
-The inversion frequencies for SNAPE can be found [here](results/SNAPE_nhm_inversion.af) and the results for PoolSNP [here](results/PoolSNP_nhm_inversion.af). 
+The calculated inversion frequencies for SNAPE can be found [here](results/SNAPE_nhm_inversion.af) and the results for PoolSNP [here](results/PoolSNP_nhm_inversion.af). 
 
 
 ### Method Correlation
