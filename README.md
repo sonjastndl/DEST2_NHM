@@ -20,6 +20,7 @@ Preliminary result for In(3R)Payne:
 
 ![Preliminary results. Example In(3R)Payne:](results/Continents_lat_3RPayne.png) 
 
+[Static Analysis on Latitudinal Clines](#statistics)
 
 ### Consistency Across Years
 Investigations were performed on North American sampels and European samples, to get insight into consistency of allele frequencies across years.  
