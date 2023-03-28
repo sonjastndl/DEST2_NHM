@@ -20,17 +20,30 @@ Investigations were performed on North American sampels and European samples, to
 
 ![Preliminary results. Example Europe:](results/Year_Europe_lat.png)
 
-## Pipeline Steps
+## Workflow
 
-Individual scripts to perform these analyses can be found in the scripts directory, the whole pipeline is documentated in the [main.sh](shell/main.sh) file.
+### Requirements
 
+Make sure to have the following requirements installed and running:
+- Python3
+- R 
+- GNU parallel (https://www.gnu.org/software/parallel/)
+
+### Steps
+
+Individual scripts to perform these analyses can be found in the scripts directory, the whole workflow including commands to call these scripts is documentated in the [main.sh](shell/main.sh) file.
+Please note that this is not a fully automated pipeline, consequently paths and directories for intermediate files and results need to be created and changed during this analysis manually.
+Additionally, scripts need to be called individually for SNAPE and PoolSNP data sets.
+
+0) Download DEST data (http://berglandlab.uvadcos.io)
 1) Convert VCF to SYNC
 2) Get count at inversion specific marker SNPs
 3) Calculate average frequencies for marker SNPs
-4) Plot marker frequencies for each Inversion occuring in the data set
-5) Plot Correlation of Inversion Markers of PoolSNP & SNAPE
+4) Plot correlation of inversion markers present in PoolSNP & SNAPE 
+5) Plot marker frequencies for each inversion occuring in the data set
+
 
 ### Additional scrips that can be used to extend analysis based on coverage
 
-- Get the average coverage of a marker for each population [SubsampleSyncCov](scripts/SubsampleSyncCov.py)
-- Get the coverage of each marker [CovPerMarker](scripts/CovPerMarker.py)
+- Get the **average coverage** of all markers for each population as one vector in a CSV. [SubsampleSyncCov](scripts/SubsampleSyncCov.py)
+- Get the **total coverage** of each marker across all populations as one vector in a CSV. [CovPerMarker](scripts/CovPerMarker.py)

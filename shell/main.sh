@@ -19,7 +19,7 @@ gunzip -c /media/DEST2_NHM/data/dest.all.PoolSNP.001.50.25Feb2023.norep.vcf.gz |
         --input {} |
     gzip >/media/DEST2_NHM/output/dest.all.PoolSNP.001.50.25Feb2023.norep.gz
 
-## SNAPE 
+## additional command repetition for SNAPE 
 gunzip -c /media/DEST2_NHM/data/dest.PoolSeq.SNAPE.NA.NA.25Feb2023.norep.vcf.gz |
     parallel \
         --jobs 80 \
@@ -51,6 +51,9 @@ python3 /media/DEST2_NHM/scripts/inversion-freqs.py \
     $NAMES \
     >/media/DEST2_NHM/results/SNAPE_nhm_inversion.af
 
+# Plot Correlation of Inversion Markers of PoolSNP & SNAPE 
+# Rscript /media/DEST2_NHM/scripts/PlotCorr.R
+
 
 # Plot for each Inversion occuring in the data set
 # RScript "LatContInv.R" uses three input arguments (AF table, metadata, name of inversion)
@@ -62,11 +65,10 @@ for i in ${inversions[@]}; do
     Rscript /media/DEST2_NHM/scripts/LatContInv.R /media/DEST2_NHM/results/PoolSNP_nhm_inversion.af /media/DEST2_NHM/data/dest_v2.samps_25Feb2023.csv ${inv}
 done
 
-#Rscript /media/DEST2_NHM/scripts/LatContInv.R /media/DEST2_NHM/results/PoolSNP_nhm_inversion.af /media/DEST2_NHM/data/dest_v2.samps_25Feb2023.csv In.2L.t
 
-## Plot Correlation of Inversion Markers of PoolSNP & SNAPE 
-Rscript /media/DEST2_NHM/scripts/PlotCorr.R
-Rscript /media/DEST2_NHM/scripts/PlotInversions.R
+
+##Additional script to directly work in R and make adjustments:
+## /media/DEST2_NHM/scripts/PlotInversions.R
 
 ## Get Coverages (DP) from sync files as weights for regression analysis
 #python3 /media/DEST2_NHM/scripts/SubsampleSyncCov.py --sync PoolSNP_inversion_markers.sync  > CoveragesPoolSNP.csv
