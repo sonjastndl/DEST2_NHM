@@ -2,7 +2,10 @@
 
 The included scripts were applied to the *PoolSNP* and *SNAPE* VCF files of the DESTv2 project, the filtered markers correspond with *inversion_markers_v6.txt*.
 Average fequencies of these inversion specific marker SNPs were determined for each SNP calling method.
-The Following Analyses were performed:
+The Following Analyses were performed.
+
+The inversion frequencies for SNAPE can be found [here](results/SNAPE_nhm_inversion.af) and the results for PoolSNP [here](results/PoolSNP_nhm_inversion.af). 
+
 
 ### Method Correlation
 Correlation of average frequencies for both methods were investigated for correlation.
