@@ -1,11 +1,12 @@
 # Analysis of Inversion Specific Markers in the DESTv2 dataset.
 
-The included scripts were applied to the *PoolSNP* and *SNAPE* VCF files of the DESTv2 project, the filtered markers correspond with *inversion_markers_v6.txt*.
+The included scripts were applied to the *PoolSNP* and *SNAPE* VCF files of the DESTv2 project (https://dest.bio/), the filtered markers correspond with *inversion_markers_v6.txt*.
 Average fequencies of these inversion specific marker SNPs were determined for each SNP calling method.
-The Following Analyses were performed.
 
 The calculated inversion frequencies for SNAPE can be found [here](results/SNAPE_nhm_inversion.af) and the results for PoolSNP [here](results/PoolSNP_nhm_inversion.af). 
 
+
+The following Analyses were performed:
 
 ### Method Correlation
 Correlation of average frequencies for both methods were investigated for correlation.
@@ -15,11 +16,15 @@ Correlation of average frequencies for both methods were investigated for correl
 ### Latitudinal Clines Across Continents 
 For inverions *In(3R)Payne*, *In(2L)t*, *In(2R)Ns*, *In(3R)C*, *In(3R)K*, *In(3R)Mo* and  *In(3L)P* several analysis of relationship between latitude and inversion frequencies were performed. 
 
+Preliminary result for In(3R)Payne:
+
 ![Preliminary results. Example In(3R)Payne:](results/Continents_lat_3RPayne.png) 
 
 
 ### Consistency Across Years
 Investigations were performed on North American sampels and European samples, to get insight into consistency of allele frequencies across years.  
+
+Preliminary result for Europe:
 
 ![Preliminary results. Example Europe:](results/Year_Europe_lat.png)
 
