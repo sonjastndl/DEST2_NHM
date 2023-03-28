@@ -50,6 +50,11 @@ Additionally, scripts need to be called individually for SNAPE and PoolSNP data 
 4) Plot correlation of inversion markers present in PoolSNP & SNAPE 
 5) Plot marker frequencies for each inversion occuring in the data set
 
+### Statistics 
+
+Type3 ANOVA was performed for latitudinal cline effects for all inversions with the "car" RPackage.
+The summary for the ANOVA can be found [here](results/AdditionalStatistics/InversionStats.pdf).
+
 
 ### Additional scrips that can be used to extend analysis based on coverage
 
