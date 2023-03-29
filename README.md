@@ -16,7 +16,7 @@ Correlation of average frequencies for both methods were investigated for correl
 ### Latitudinal Clines Across Continents 
 For inverions *In(3R)Payne*, *In(2L)t*, *In(2R)Ns*, *In(3R)C*, *In(3R)K*, *In(3R)Mo* and  *In(3L)P* several analysis of relationship between latitude and inversion frequencies were performed. 
 
-Preliminary result for In(3R)Payne:
+Preliminary result for In(3R)Payne from the PoolSNP dataset:
 
 ![Preliminary results. Example In(3R)Payne:](results/Continents_lat_3RPayne.png) 
 
@@ -25,7 +25,7 @@ Preliminary result for In(3R)Payne:
 ### Consistency Across Years
 Investigations were performed on North American sampels and European samples, to get insight into consistency of allele frequencies across years.  
 
-Preliminary result for Europe:
+Preliminary result for Europe (PoolSNP dataset):
 
 ![Preliminary results. Example Europe:](results/Year_Europe_lat.png)
 
@@ -53,7 +53,7 @@ Additionally, scripts need to be called individually for SNAPE and PoolSNP data 
 
 ### Statistics 
 
-Type3 ANOVA was performed for latitudinal cline effects for all inversions with the "car" RPackage.
+Type3 ANOVA was performed for latitudinal cline effects for all inversions with the "car" RPackage on the PoolSNP data set.
 The summary for the ANOVA can be found [here](results/AdditionalStatistics/InversionStats.pdf).
 
 
